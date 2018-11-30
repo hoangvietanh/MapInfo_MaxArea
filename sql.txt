@@ -1,0 +1,5 @@
+Update thanhphat_cqlp1 Set crid = tencql+"-"+tobando+"-"+thuad 
+SELECT crid, dtbd, MAX(dtbd),maldlr FROM thanhphat_cqlp1 GROUP BY crid into Get_LDLR 
+Browse * From Result
+Add Column "thanhphat_cqlp1" (MALDLR )From Get_LDLR Set To MALDLR Where COL27 = COL1
+Browse * From thanhphat_cqlp1
